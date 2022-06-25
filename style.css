@@ -1,0 +1,1031 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Calibri";
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 9vh;
+    position: fixed;
+    background-color: rgb(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 0px 5px rgb(247, 247, 247);
+    z-index: 2;
+}
+
+.logo {
+
+    font-weight: bold;
+    font-size: 2.7rem;
+    margin-left: 6rem;
+    padding-top: 1.5rem;
+    display: inline-block;
+
+}
+
+ul {
+    float: right;
+    text-align: center;
+    margin-right: 10rem;
+    display: inline;
+}
+
+ul li {
+    display: inline-block;
+    padding: 1.8rem;
+
+}
+
+ul li a {
+    font-size: 1.8rem;
+    font-weight: 550;
+    position: relative;
+    transition: all 0.5s;
+}
+
+ul li a::after {
+    content: " ";
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    background-color: rgba(4, 253, 0, 0.3);
+    width: 20%;
+    transition: all 0.5s;
+}
+
+ul li a:hover::after {
+    height: 1rem;
+    width: 100%;
+}
+
+#check {
+    display: none;
+}
+
+.bttn {
+    float: right;
+    font-size: 3rem;
+    padding-top: 1.5rem;
+    padding-right: 8rem;
+    display: none;
+}
+
+#check:checked~.bttn i::before {
+    content: " \f00d";
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.front {
+    
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90vh;
+    top: 2rem;
+}
+
+.introtext {
+    position: absolute;
+    width: 40%;
+    height: 50vh;
+    top: 4rem;
+    left: 4rem;
+
+}
+
+.introtext h1 {
+    font-size: 4.6rem;
+    word-spacing: 0.4rem;
+    font-weight: bolder;
+    padding: 4rem 0rem 0rem 5rem;
+    line-height: 5.7rem;
+}
+
+.introtext p {
+    font-size: 1.7rem;
+    padding: 2rem 0rem 0rem 5rem;
+    word-spacing: 0.4rem;
+    line-height: 2.7rem;
+    font-weight: 600;
+    color: rgb(140, 140, 140);
+}
+
+.button1,
+.button2 {
+    width: 10vw;
+    height: 7vh;
+    border-radius: 0.4rem;
+    background-color: #54cc85;
+    border: 0.3rem solid #479264;
+    font-weight: 600;
+    margin: 2.5rem 0rem 0rem 5rem;
+}
+
+.button1 a {
+    font-size: 1.7rem;
+    color: white;
+}
+
+.button2 {
+    background-color: white;
+    margin-left: 2rem;
+}
+
+.button2 a {
+    font-size: 1.7rem;
+    color: #479264;
+}
+
+.front img {
+    position: absolute;
+    right: 8rem;
+}
+
+.seconddiv {
+    position: relative;
+    top: 2rem;
+    width: 100%;
+    height: 90vh;
+}
+
+.seconddiv img {
+    position: absolute;
+    left: 6rem;
+}
+
+.abouttext {
+    position: absolute;
+    width: 40vw;
+    height: 50vh;
+    top: 10rem;
+    right: 15rem;
+}
+
+.abouttext p {
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+    font-weight: 600;
+    color: rgb(140, 140, 140);
+
+}
+
+.abouttext h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.thirddiv {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: 2rem;
+    width: 100%;
+    height: 90vh;
+    content: " ";
+}
+
+.thirddiv h1,
+.fourthdiv h1,
+.footerdiv h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cardcontainer {
+    margin-top: 5rem;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 50vh;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20vw;
+    height: 34rem;
+    border-radius: 1rem;
+    align-items: center;
+    transition: all 0.1s;
+}
+
+.imageholder {
+    text-align: center;
+    width: 8rem;
+    height: 8rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.imageholder img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.smallheader {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.cardtext {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2.7rem;
+    font-weight: 600;
+    color: rgb(105, 105, 105);
+}
+
+.card:hover {
+    background-color: #54cc85;
+}
+
+.card:hover .cardtext {
+
+    color: rgb(255, 255, 255);
+}
+
+.fourthdiv {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 2rem;
+    width: 100%;
+    height: 80vh;
+}
+
+.containeragain {
+    margin-top: 5rem;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 50vh;
+    justify-content: space-around;
+
+}
+
+.twocard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 18vw;
+    height: 34rem;
+    border-radius: 1rem;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.twocard:hover {
+    border: 1px solid rgb(148, 148, 148);
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.twocard h1 {
+    font-size: 2.3rem;
+    font-weight: 900;
+    margin-top: 2rem;
+}
+
+.twocard p {
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+    width: 20rem;
+    font-size: 1.3rem;
+    color: rgb(45, 45, 45);
+    font-weight: 600;
+}
+
+.special {
+    width: 22rem;
+}
+
+.twocard h2 {
+    color: rgb(72, 72, 72);
+    margin-top: -2rem;
+}
+
+button {
+    margin-bottom: 2rem;
+    width: 12rem;
+    height: 4rem;
+}
+
+.button3 {
+    background-color: #54cc85;
+    border: 1px solid #54cc85;
+    border-radius: 0.5rem;
+}
+
+.button3 a {
+    color: white;
+}
+
+.button4 {
+    background-color: white;
+    border: 1px solid rgb(240, 240, 240);
+}
+
+.button4 a {
+    color: #479264;
+}
+
+.footerdiv {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 2rem;
+    height: 95vh;
+    width: 100vw;
+}
+
+.biginfooter {
+    width: 80vw;
+    height: 65vh;
+    position: relative;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    background-color: #54cc85;
+
+}
+
+.subscription {
+    height: 22vh;
+    width: 60vw;
+    top: -8rem;
+    position: absolute;
+    border-top: 1px solid rgb(240, 240, 240);
+    border-left: 1px solid rgb(240, 240, 240);
+    border-right: 1px solid rgb(240, 240, 240);
+    box-shadow: 0px 0px 2px 0px #ccc;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.7rem;
+    content: " ";
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.subscription h2 {
+    padding: 2rem 0rem 1rem 0rem;
+    font-size: 2rem;
+}
+
+.subscription p {
+    color: rgb(105, 105, 105);
+    font-size: 1.4rem;
+    margin-top: 0rem;
+}
+
+.smallinput {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.smallinput input {
+    width: 30vw;
+    height: 5vh;
+    border-radius: 0.4rem;
+    border: 2px solid rgb(148, 148, 148);
+    margin-left: 4rem;
+    padding: 1rem;
+}
+
+.smallinput button {
+    width: 12vw;
+    height: 5vh;
+    margin-right: 10rem;
+    color: white;
+    background-color: #54cc85;
+    border-radius: 0.4rem;
+    border: 2px solid #54cc85;
+}
+
+.smallinput button a {
+    color: white;
+}
+
+.info {
+    top: 28vh;
+    padding: 0rem 0rem 4rem 0rem;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50vw;
+    height: 9vh;
+    border-bottom: 2px solid rgb(223, 223, 223);
+}
+
+.innerinfo {
+    width: 8vw;
+    height: 6vh;
+    text-align: center;
+}
+
+.innerinfo h2 {
+    font-size: 1.8rem;
+}
+
+.innerinfo p {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.logos {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    top: 43vh;
+    justify-content: space-around;
+    width: 14vw;
+    height: 5vh;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-twitter,
+.fa-linkedin {
+
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.9);
+    transition: all 0.3s;
+}
+
+.fa-heart-o {
+    position: relative;
+
+    padding: 5px 7px 0px 5px;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: rgb(255, 2, 2);
+
+}
+
+.fa-facebook:hover {
+    font-size: 2.2rem;
+}
+
+.fa-instagram:hover {
+    font-size: 2.2rem;
+}
+
+.fa-twitter:hover {
+    font-size: 2.2rem;
+}
+
+.fa-linkedin:hover {
+    font-size: 2.2rem;
+}
+
+.credits {
+    display: flex;
+    position: absolute;
+    top: 50vh;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+}
+
+.credits p {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+@keyframes blink {
+    from {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    to {
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+
+.fa-heart-o:hover {
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@media (max-width:1025px) {
+    .introtext {
+        position: absolute;
+        width: 40%;
+        height: 50vh;
+        top: 4rem;
+        left: 2rem;
+
+    }
+
+    ul {
+        margin-right: 8rem;
+    }
+
+    .introtext h1 {
+        font-size: 4rem;
+    }
+
+    .front img {
+        position: absolute;
+        width: 60vw;
+        right: -2rem;
+    }
+
+    .button1,
+    .button2 {
+        width: 15vw;
+    }
+
+    .seconddiv img {
+        position: absolute;
+        width: 45vw;
+        top: 5rem;
+        left: 0;
+    }
+
+    .abouttext {
+        width: 50vw;
+        height: 50vh;
+        top: 14rem;
+        right: 2rem;
+        overflow: hidden;
+
+    }
+
+    .abouttext p {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+
+    }
+
+    .abouttext h1 {
+        font-size: 3.3rem;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    .card {
+        width: 22vw;
+    }
+
+    .cardcontainer {
+        height: 55vh;
+    }
+
+    .cardtext {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+
+    .imageholder {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .imageholder img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .fourthdiv h1,
+    .thirddiv h1,
+    .footerdiv h1 {
+        font-size: 3.5rem;
+    }
+
+    .fourthdiv h1 {
+        margin-bottom: 0.7rem;
+    }
+
+    .twocard {
+        width: 23vw;
+    }
+
+    .smallinput button {
+        margin-right: 5rem;
+    }
+}
+
+@media (max-width:769px) {
+    ul {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-image: linear-gradient(to top right, #479264, #54cc85);
+        left: -100%;
+        transition: all 0.5s;
+        z-index: 1;
+    }
+
+    ul li {
+        display: block;
+        padding-top: 6.5rem;
+    }
+
+    .bttn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    ul li a:hover::after {
+        height: 0;
+        width: 0;
+    }
+
+    ul li a:hover {
+        color: white;
+    }
+
+    .front {
+        flex-direction: column;
+        height: 100vh;
+        top: 0;
+    }
+
+    .introtext {
+        position: absolute;
+        order: 2;
+        flex-basis: 100%;
+        width: 100%;
+        top: 40rem;
+        left: 0rem;
+    }
+
+    .front img {
+        position: absolute;
+        order: 1;
+        left: 8rem;
+        width: 80%;
+        flex-basis: 100%;
+    }
+
+    .introtext h1 {
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 3rem;
+        margin-left: 0.7rem;
+        line-height: 3.5rem;
+    }
+
+    .introtext p {
+        font-size: 1.4rem;
+        margin-left: 0.7rem;
+        word-spacing: 0.2rem;
+        line-height: 2.5rem;
+    }
+
+    .button1,
+    .button2 {
+        width: 20vw;
+        height: 7.5vh;
+    }
+
+    .button1 {
+        margin-left: 19rem;
+    }
+
+    .button2 {
+        margin-left: 5rem;
+    }
+
+    .seconddiv {
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .seconddiv img {
+        width: 50vw;
+        left: 20rem;
+        top: -1rem;
+    }
+
+    .abouttext {
+
+        width: 90vw;
+        height: 38vh;
+        top: 39rem;
+    }
+
+    .abouttext p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        word-spacing: 0.4rem;
+
+    }
+
+    .abouttext h1 {
+        font-size: 3rem;
+        padding-bottom: 2.9rem;
+        margin-right: 1.5rem;
+        overflow: hidden;
+    }
+
+    .thirddiv {
+        height: 127vh;
+        top: 0rem;
+    }
+
+    .cardcontainer {
+        direction: column;
+        height: 120vh;
+    }
+
+    .card {
+        flex-basis: 100vw;
+        height: 22rem;
+    }
+
+    .fourthdiv {
+        top: 0;
+        height: 130vh;
+    }
+
+    .containeragain {
+        direction: column;
+        width: 85vw;
+        height: 130vh;
+    }
+
+    .twocard {
+        flex-basis: 100%;
+        height: 32rem;
+    }
+
+    .twocard p,
+    .special {
+        width: 50rem;
+        letter-spacing: 0.09rem;
+    }
+
+    .logos {
+        width: 18vw;
+    }
+
+    .info {
+        width: 60vw;
+    }
+}
+
+@media (max-width:426px) {
+    .logo {
+        margin-left: 2.5rem;
+        padding-top: 1.4rem;
+    }
+
+    .bttn {
+        font-size: 2.2rem;
+        padding-top: 2rem;
+        padding-right: 3rem;
+    }
+
+    .front img {
+        position: absolute;
+        top: 2rem;
+        left: 1.5rem;
+        width: 100vw;
+    }
+
+    .introtext {
+        width: 100%;
+        top: 30rem;
+        left: 1rem;
+    }
+
+    .introtext h1 {
+        padding: 0rem 0rem 0rem 2rem;
+        line-height: 4rem;
+    }
+
+    .introtext p {
+        padding: 2rem 0rem 0rem 2rem;
+        word-spacing: 0.4rem;
+        line-height: 2.3rem;
+    }
+
+    .button1,
+    .button2 {
+        width: 30vw;
+        height: 7vh;
+        margin: 2.5rem 0rem 0rem 7rem;
+    }
+
+    .button1 a {
+        font-size: 1.6rem;
+    }
+
+    .button2 {
+        margin-left: 2rem;
+    }
+
+    .button2 a {
+        font-size: 1.5rem;
+    }
+
+    .seconddiv img {
+        width: 70vw;
+        left: 7rem;
+        top: 2rem;
+    }
+
+    .abouttext {
+
+        width: 90vw;
+        height: 39.4vh;
+        top: 34rem;
+        text-align: center;
+    }
+
+    .abouttext h1 {
+        font-size: 3rem;
+        padding-bottom: 2.9rem;
+        margin-left: 3rem;
+        overflow: hidden;
+    }
+
+    .thirddiv h1,
+    .fourthdiv h1 {
+        font-size: 3.3rem;
+    }
+
+    .thirddiv {
+        height: 130vh;
+    }
+
+    .thirddiv h1 .cardcontainer {
+        width: 100%;
+        height: 130vh;
+    }
+
+    .twocard p,
+    .special {
+        width: 25rem;
+        letter-spacing: 0.09rem;
+    }
+
+    .twocard h1 {
+        font-size: 2.2rem;
+    }
+
+    .footerdiv {
+        height: 110vh;
+    }
+
+    .footerdiv h1 {
+        font-size: 2.8rem;
+    }
+
+    .biginfooter {
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .subscription {
+        height: 24vh;
+        width: 80vw;
+    }
+
+    .subscription h2 {
+        padding: 2rem 0rem 1rem 0rem;
+        font-size: 1.8rem;
+    }
+
+    .subscription p {
+        font-size: 1.3rem;
+    }
+
+    .smallinput input {
+        width: 50vw;
+        margin-left: 0.7rem;
+    }
+
+    .smallinput button {
+        width: 18vw;
+        margin-right: 1rem;
+    }
+
+    .info {
+        padding-bottom: 0rem;
+        justify-content: space-around;
+        top: 20vh;
+        width: 80vw;
+        height: 42vh;
+        border-bottom: 2px solid rgb(223, 223, 223);
+    }
+
+    .innerinfo {
+
+        flex-basis: 100%;
+        width: 24vw;
+        height: 9vh;
+        text-align: center;
+    }
+
+    .logos {
+
+        position: absolute;
+        width: 40vw;
+        display: flex;
+        text-align: center;
+        top: 64vh;
+    }
+
+    .credits {
+        top: 69vh;
+    }
+}
+
+@media(max-width:376px) {
+    .introtext {
+        width: 100%;
+        top: 27rem;
+        left: 1rem;
+    }
+
+    .button1,
+    .button2 {
+        width: 37vw;
+        height: 7vh;
+        margin: 2.7rem 0rem 0rem 2.7rem;
+    }
+
+    .seconddiv img {
+        width: 80vw;
+        left: 4rem;
+        top: 2rem;
+    }
+
+    .abouttext {
+        top: 35rem;
+    }
+}
+
+@media (max-width:321px) {
+    .front img {
+        position: absolute;
+        top: 4rem;
+        left: 1rem;
+        width: 100vw;
+    }
+
+    .abouttext {
+
+        width: 90vw;
+        height: 39.4vh;
+        top: 31rem;
+        left: 2rem;
+    }
+
+    .abouttext h1 {
+        margin-left: 3rem;
+    }
+
+    .subscription {
+        height: 25vh;
+    }
+
+    .subscription h2 {
+        font-size: 1.6rem;
+    }
+
+    .subscription p {
+        font-size: 1.3rem;
+    }
+}
